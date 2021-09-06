@@ -10,14 +10,13 @@ int main(){
 }
 
 int func(char str[]){
-    int flag = 1;
-    int len = strlen(str);
+
+    int len = strlen(str)-1;
     int i=0,j=len;
-    for(;i<len;i++,j--){
+    for(;i>j;i++,j--){
         if(str[i]!=str[j] || i>j){
-            flag = 0;
-            break;
+            return 0;
         }
     }
-    return flag;
+    return 1;
 }
