@@ -13,7 +13,7 @@ int func(char str[]){
 
     int len = strlen(str)-1;
     int i=0,j=len;
-    for(;i>j;i++,j--){
+    for(;i<=j;i++,j--){
         if(str[i]!=str[j]){
             return 0;
         }
