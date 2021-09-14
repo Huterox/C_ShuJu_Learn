@@ -12,7 +12,7 @@ int main_2(){
 
 int sum(int num){
     int s=0;
-    if num:
+    if (num)
         while (num)
         {
             s+=(num%10);

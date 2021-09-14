@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-int main(){
+int main_3(){
     int func(char str[]);
     char str[]="";
     scanf("%s",str);
@@ -12,10 +12,10 @@ int main(){
 int func(char str[]){
     int len = strlen(str)-1;
     int i=0,j=len;
-    for(;i>j;i++,j--){
+    for(;i<=j;i++,j--){
         if(str[i]!=str[j]){
+
             return 0;
-            break;
         }
     }
     return 1;
